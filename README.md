@@ -1,6 +1,15 @@
 # Sory's dotFiles
 
-This is a list of my daily used configuration files.
+This is a list of the configuration files i use on a daily basis. 
+
+## What is included?
+
+* bash_profile
+* vimrc
+* vim folder with pluggins
+* alacritty.yml
+* tmux.conf
+* enabler bash script to install the files.
 
 ## Important Notes:
 
