@@ -53,6 +53,3 @@ export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 
 #Line to allow case insensitive tab autocompletion in Bash:
 bind 'set completion-ignore-case on'
-
-#Other. These shouldnt be included in the deploy to GitHub
-alias npm1='ssh sescobar@npm-j1.u1'
