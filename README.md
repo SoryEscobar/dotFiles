@@ -1,4 +1,3 @@
-# dot_files
+# Sory's dotFiles
 
-
-#Hi There 
+This is a list of my daily used configuration files.
