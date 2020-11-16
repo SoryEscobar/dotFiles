@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/sory/.sory_dot/TEMP_TO_INCLUDE'
+let g:netrw_dirhist_2='/Users/sory/.sory_dot/.git'
+let g:netrw_dirhist_1='/Users/sory/temp_wallet/wallet_app/.venv'
+let g:netrw_dirhist_0='/Users/sory/temp_wallet/.git'
+let g:netrw_dirhist_9='/Users/sory/temp_wallet'
+let g:netrw_dirhist_8='/Users/sory/temp_wallet/.git'
+let g:netrw_dirhist_7='/Users/sory/temp_wallet'
+let g:netrw_dirhist_6='/Users/sory/temp_wallet/.git'
+let g:netrw_dirhist_5='/Users/sory/temp_test_sory_11/.git'
+let g:netrw_dirhist_4='/Users/sory'
