@@ -4,6 +4,7 @@
 ##############################
 
 
+rm -rf ~/.vim
 
 ln -sf  `pwd`/.bash_profile        ~/.bash_profile 
 ln -sf  `pwd`/.alacritty.yml       ~/.alacritty.yml
