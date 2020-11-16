@@ -11,4 +11,4 @@ ln -sf  `pwd`/.tmux.conf           ~/.tmux.conf
 ln -sf  `pwd`/.vimrc               ~/.vimrc
 ln -sf  `pwd`/.vim                 ~/.vim
 
-vim -c PlugInstall
+vim -c PlugInstall -c qa
