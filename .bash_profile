@@ -1,11 +1,13 @@
 #! /bin/bash
 
-
-#[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
 
 
 echo "Welcome Sory. Bash profile file enabled."
 export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ "
+
+
+export LANG=en_US.UTF8
 
 
 alias ap='vim ~/.alacritty.yml'
@@ -34,8 +36,9 @@ alias tn='tt new -s'
 alias tp='vim ~/.tmux.conf'
 alias tt='tmux'
 alias v='vim'
-alias vim='vi'
+alias vim='nvim'
 alias vimrc='vim  ~/.vimrc'
+alias nvimrc='vim  ~/.config/nvim/init.vim'
 
 # FZF commands
 alias vf='vim "$(fd --type file . | fzf)"'
