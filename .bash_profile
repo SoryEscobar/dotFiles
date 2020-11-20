@@ -40,6 +40,8 @@ alias vim='nvim'
 alias vimrc='vim  ~/.vimrc'
 alias nvimrc='vim  ~/.config/nvim/init.vim'
 
+alias dotFiles='cd ~/dotFiles'
+
 # FZF commands
 alias vf='vim "$(fd --type file . | fzf)"'
 alias cdd='cd "`fd --type d | fzf`"'
