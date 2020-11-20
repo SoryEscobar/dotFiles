@@ -22,19 +22,15 @@ set noswapfile
 set clipboard=unnamed 
 
 
-"call plug#begin('~/.vim/plugged')
-"
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
-"Plug 'vim-airline/vim-airline'
-"
-"Plug 'gruvbox-community/gruvbox'
-"Plug 'sainnhe/gruvbox-material'
-"Plug 'phanviet/vim-monokai-pro'
-"Plug 'flazz/vim-colorschemes'
-"Plug '/home/mpaulson/personal/vim-be-good'
-"
-"call plug#end()
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'vim-airline/vim-airline'
+
+Plug 'gruvbox-community/gruvbox'
+
+call plug#end()
 
 
 
