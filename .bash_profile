@@ -38,7 +38,7 @@ alias tt='tmux'
 alias v='vim'
 alias vim='nvim'
 alias vimrc='vim  ~/.vimrc'
-alias nvrc='vim  ~/.config/nvim/init.vim'
+alias vp='vim  ~/.config/nvim/init.vim'
 
 alias dotFiles='cd ~/dotFiles'
 
