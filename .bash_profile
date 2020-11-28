@@ -61,4 +61,4 @@ bind 'set completion-ignore-case on'
 
 
 
-#[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
