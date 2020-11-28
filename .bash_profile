@@ -1,6 +1,5 @@
 #! /bin/bash
 
-[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
 
 
 echo "Welcome Sory. Bash profile file enabled."
@@ -35,6 +34,7 @@ alias tl='tt ls'
 alias tn='tt new -s'
 alias tp='vim ~/.tmux.conf'
 alias tt='tmux'
+alias tmux='TERM=screen-256color tmux'
 alias v='vim'
 alias vim='nvim'
 alias vimrc='vim  ~/.vimrc'
@@ -54,8 +54,11 @@ export FZF_DEFAULT_COMMAND="fd . ."
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 
-let g:fzf_preview_window = ['right:50%', 'ctrl-/']
 
 
 #Line to allow case insensitive tab autocompletion in Bash:
 bind 'set completion-ignore-case on'
+
+
+
+#[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
