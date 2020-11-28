@@ -47,6 +47,14 @@ Plug 'vim-airline/vim-airline'
 call plug#end()
 
 
+
+" Fzf in Vim
+"let g:fzf_layout = { 'down': '30%' } "Bottom Half
+let g:fzf_layout = { 'window': 'enew' } "Full window
+
+
+
+
 " Leader
 let mapleader = " "
 
@@ -67,11 +75,17 @@ nmap <leader><Esc> :wincmd o <CR>
 
 " FZF
 nmap <leader>f :Files<CR>
+nmap <leader>F :Filetypes<CR>
+nmap <leader>g :GFiles?<CR>
 nmap <leader><Space> :Buffers<CR>
-nmap <leader>g :Ag<CR>
+nmap <leader>G :Ag<CR>
 nmap <leader>? :BLines<CR>
 nmap <leader>/ :Lines<CR>
 nmap <leader>h :History<CR>
+nmap <leader>H :History:<CR>
+nmap <leader>C :Commands<CR>
+nmap <leader>c :Commits<CR>
+nmap <leader>co :Colors<CR>
 
 " indent/unindent with tab/shift-tab
 nmap <Tab> >>
