@@ -118,7 +118,7 @@ vmap <C-k> :m '<-2<CR>gv=gv
 
 
 " auto-pairs
-au FileType python let b:AutoPairs = AutoPairsDefine({"f'" : "'", "r'" : "'", "b'" : "'"})
+"au FileType python let b:AutoPairs = AutoPairsDefine({"f'" : "'", "r'" : "'", "b'" : "'"})
 
 
 " color scheme
