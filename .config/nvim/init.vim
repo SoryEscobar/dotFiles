@@ -51,6 +51,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -101,6 +102,10 @@ nmap <S-tab> <<
 imap <S-Tab> <Esc><<i
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+
+"Python
+com! Py ! python %
+nmap <leader>p :Py<CR>
 
 
 " Move Lines:

@@ -1,5 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/sory/programing_projects_2020/torretest_front/user'
+let g:netrw_dirhist_8='/Users/sory/programing_projects_2020/torretest_api/api'
+let g:netrw_dirhist_7='/Users/sory/programing_projects_2020/torretest_api'
+let g:netrw_dirhist_6='/Users/sory/Documents/Desarrollo y Programacion/Proyectos_de_programacion_de_PortatilMacbookSory/finanzas_app'
+let g:netrw_dirhist_5='/Users/sory/programing_projects_2020/torretest_api/.venv'
 let g:netrw_dirhist_4='/Users/sory/Documents/ejecricios_programacion/DJANGO_SORY_TESTS'
 let g:netrw_dirhist_3='/Users/sory/dotFiles/.vim/plugged/vim-airline'
 let g:netrw_dirhist_2='/Users/sory/dotFiles/.vim/plugged'

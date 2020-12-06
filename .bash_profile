@@ -6,6 +6,8 @@ echo "Welcome Sory. Bash profile file enabled."
 export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ "
 
 
+alias tapi='cd ~/programing_projects_2020/torretest_api'
+
 export LANG=en_US.UTF8
 
 
