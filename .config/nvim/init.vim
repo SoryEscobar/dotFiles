@@ -75,6 +75,10 @@ nmap <leader>x :bd<CR>
 " Undo
 nmap <leader>u :e!<CR>
 
+" Save
+nmap <leader>ww :w<CR>
+
+
 " move through split windows
 nmap <leader>h :wincmd h<CR>
 nmap <leader>j :wincmd j<CR>
@@ -82,12 +86,18 @@ nmap <leader>k :wincmd k<CR>
 nmap <leader>l :wincmd l<CR>
 nmap <leader><Esc> :wincmd o <CR>
 
+" Grep searching
+nmap <leader>g :Rg<CR>
+nmap <leader>G :Ag<CR>
+
+
 " FZF
+nmap <leader><Space> :Buffers<CR>
 nmap <leader>f :Files<CR>
 nmap <leader>F :Filetypes<CR>
-nmap <leader>g :GFiles?<CR>
-nmap <leader><Space> :Buffers<CR>
-nmap <leader>G :Ag<CR>
+"nmap <leader>g :GFiles?<CR>
+ 
+
 nmap <leader>? :BLines<CR>
 nmap <leader>/ :Lines<CR>
 nmap <leader>h :History<CR>
