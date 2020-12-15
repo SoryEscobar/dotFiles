@@ -17,17 +17,12 @@ alias bp_run='. ~/.bash_profile'
 alias cc='clear'
 alias ee='exit'
 alias egrep='egrep --color=auto'
-alias f='find'
-alias g='egrep -ir'
 alias grep='grep --color=auto'
 alias hh='cd $HOME'
 
 ls --color=al > /dev/null 2>&1 && alias ls='ls -F --color=al' || alias ls='ls -G'; alias ll='ls -alh'
 
 alias lt='ll -tr'
-alias s='screen'
-alias sn='screen -S'
-alias sr='screen -r'
 alias ta='tt a'
 alias tat='tt attach-session -t'
 alias tb='vim ~/.tmux.conf'
@@ -45,9 +40,11 @@ alias vp='vim  ~/.config/nvim/init.vim'
 alias dotFiles='cd ~/dotFiles'
 
 # FZF commands
-alias vf='vim "$(fd --type file . | fzf)"'
-alias cdd='cd "`fd --type d | fzf`"'
-alias kp='kill $(ps aux | fzf -m)'
+alias vf='vim "$(fd --type file . | fzf)"' # Vim file
+alias cdd='cd "`fd --type d | fzf`"' # Change directory
+
+alias kp="echo \"\$(ps aux | fzf -m)\" | awk '{print \$2}' | xargs kill -9" #Kill process
+
 
 
 # Opciones por defecto de FZF. Para que funcionen hay que instalar fd, es como un find pero funciona mejor con fzf
