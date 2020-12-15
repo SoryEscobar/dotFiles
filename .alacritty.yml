@@ -22,13 +22,13 @@ background_opacity: .75
 # Font Customization
 font:
   normal:
-    family: monospace
+    family: Menlo
     style: Regular
   bold:
-    family: monospace
+    family: Menlo
     style: Bold
   italic:
-    family: monospace
+    family: Menlo
     style: Italic
   size: 14
   use_thin_strokes: false

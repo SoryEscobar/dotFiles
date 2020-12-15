@@ -47,6 +47,7 @@ alias dotFiles='cd ~/dotFiles'
 # FZF commands
 alias vf='vim "$(fd --type file . | fzf)"'
 alias cdd='cd "`fd --type d | fzf`"'
+alias kp='kill $(ps aux | fzf -m)'
 
 
 # Opciones por defecto de FZF. Para que funcionen hay que instalar fd, es como un find pero funciona mejor con fzf
