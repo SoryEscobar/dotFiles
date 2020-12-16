@@ -40,17 +40,23 @@ alias vp='vim  ~/.config/nvim/init.vim'
 alias dotFiles='cd ~/dotFiles'
 
 # FZF commands
-alias vf='vim "$(fd --type file . | fzf)"' # Vim file
+alias vf='vim "$(rg --files | fzf)"' # Vim file
 alias cdd='cd "`fd --type d | fzf`"' # Change directory
 
 alias kp="echo \"\$(ps aux | fzf -m)\" | awk '{print \$2}' | xargs kill -9" #Kill process
+alias l='ll | fzf' #List with FZF
+
+alias bip='echo $(brew search | fzf -m ) | xargs brew install' # Brew Install Package FZF
+alias bipc='echo $(brew search --cask | fzf -m ) | xargs brew install --cask' # Brew Install Cask Package FZF
+alias bup='echo $(brew leaves | fzf -m) | xargs brew uninstall' # Brew Uninstall Package FZF
+# alias bin="echo \"\${PATH//:/\$'\\n'}\"" | fzf | xargs cd'
 
 
 
-# Opciones por defecto de FZF. Para que funcionen hay que instalar fd, es como un find pero funciona mejor con fzf
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
+# FZF Default options
+#export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 
-export FZF_DEFAULT_COMMAND="fd . ."
+export FZF_DEFAULT_COMMAND="rg --files"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 
