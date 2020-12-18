@@ -114,7 +114,7 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 "Python
-com! Py ! python %
+com! Py ! python3 %
 nmap <leader>p :Py<CR>
 
 
