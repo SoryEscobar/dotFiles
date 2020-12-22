@@ -3,7 +3,8 @@
 
 
 echo "Welcome Sory. Bash profile file enabled."
-export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ "
+#export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ "
+export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u \[\e[33m\]\w\[\e[0m\]\n\$ "
 
 
 alias tapi='cd ~/programing_projects_2020/torretest_api'
@@ -38,7 +39,8 @@ alias vimrc='vim  ~/.vimrc'
 alias vp='vim  ~/.config/nvim/init.vim'
 
 
-alias dotFiles='cd ~/dotFiles'
+export DOTFILES=~/dotFiles
+alias dotFiles='cd $DOTFILES'
 alias df='dotFiles'
 
 # FZF commands
@@ -47,6 +49,7 @@ alias cdd='cd "`fd --type d | fzf`"' # Change directory
 
 alias kp="echo \"\$(ps aux | fzf -m)\" | awk '{print \$2}' | xargs kill -9" #Kill process
 alias l='ll | fzf' #List with FZF
+alias fenv='env | fzf'
 
 alias bip='echo $(brew search | fzf -m ) | xargs brew install' # Brew Install Package FZF
 alias bipc='echo $(brew search --cask | fzf -m ) | xargs brew install --cask' # Brew Install Cask Package FZF
