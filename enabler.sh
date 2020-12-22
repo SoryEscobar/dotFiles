@@ -23,7 +23,7 @@ if [ -z "$(which alacritty)" ]; then echo "Installing alacritty..."; brew instal
 if [ -z "$(which fzf)" ]; then echo "Installing fzf..."; brew install fzf; else echo "Skiping fzf installation" ; fi
 if [ -z "$(which fd)" ]; then echo "Installing fd..."; brew install fd; else echo "Skiping fd installation"; fi
 if [ -z "$(which bat)" ]; then echo "Installing bat..."; brew install bat; else echo "Skiping bat installation"; fi
-if [ -z "$(which ag)" ]; then echo "Installing ag..."; brew install the_silver_searcher;  else echo "Skiping ag installation"; fi
+#if [ -z "$(which ag)" ]; then echo "Installing ag..."; brew install the_silver_searcher;  else echo "Skiping ag installation"; fi
 if [ -z "$(which rg)" ]; then echo "Installing rg..."; brew install ripgrep; else echo "Skiping rg installation"; fi
 if [ -z "$(which tmux)" ]; then echo "Installing tmux..."; brew install tmux; else echo "Skiping tmux installation"; fi
 if [ -z "$(which node)" ]; then echo "Installing node..." ; brew install node; else echo "Skiping node installation"; fi

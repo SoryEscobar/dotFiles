@@ -6,29 +6,20 @@
 syntax on enable
 filetype plugin indent on
 set rnu
-set hls incsearch 
-
-" Tabs
-set tabstop=4 
-set softtabstop=4
-set shiftwidth=4
-
-set expandtab 
-set autoindent
-"set smartindent
-set backspace=indent,eol,start
 
 set noerrorbells
 set scrolloff=7 " Space lines at border when scrolling.
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+set hls incsearch                                       " search settings
+set ignorecase smartcase                                " Ignore case searchs
+set backspace=indent,eol,start                          " backspace behavior
 set clipboard=unnamed                                   " Unified clipboard 
 set undofile nobackup noswapfile                        " Undo
 set fileformat=unix encoding=utf-8 fileencoding=utf-8   " Encoding
 set noshowmode                                          " lightline
 set foldmethod=indent foldlevel=99                      " code folding
-set ignorecase smartcase                                " Ignore case searchs
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -45,6 +36,9 @@ Plug 'morhetz/gruvbox'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 
+Plug 'Konfekt/FastFold' " Improved folding engine
+Plug 'tmhedberg/SimpylFold' " Folding algorithm for python
+
 call plug#end()
 
 
@@ -55,6 +49,7 @@ source $DOTFILES/.config/nvim/other-configs/leader-mappings.vim
 source $DOTFILES/.config/nvim/other-configs/wrap-mode.vim
 source $DOTFILES/.config/nvim/other-configs/move-lines.vim
 source $DOTFILES/.config/nvim/other-configs/experimental-features.vim
+source $DOTFILES/.config/nvim/other-configs/python-configs.vim
 
 
 " Plugins: Plug

@@ -15,14 +15,8 @@ nmap <leader>ww :w<CR>
 
 
 " move through split windows
-nmap <leader>h :wincmd h<CR>
-nmap <leader>j :wincmd j<CR>
-nmap <leader>k :wincmd k<CR>
-nmap <leader>l :wincmd l<CR>
+nmap <leader>H :wincmd h<CR>
+nmap <leader>J :wincmd j<CR>
+nmap <leader>K :wincmd k<CR>
+nmap <leader>L :wincmd l<CR>
 nmap <leader><Esc> :wincmd o <CR>
-
-
-
-"Python
-com! Py ! python3 %
-nmap <leader>p :Py<CR>
