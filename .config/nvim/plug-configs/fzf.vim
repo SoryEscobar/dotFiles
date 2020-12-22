@@ -14,7 +14,7 @@ nmap <leader>F :Filetypes<CR>
 nmap <leader>? :BLines<CR>
 nmap <leader>/ :Lines<CR>
 nmap <leader>h :History<CR>
-nmap <leader>H :History:<CR>
+"nmap <leader>H :History:<CR>
 nmap <leader>C :Commands<CR>
 nmap <leader>c :Commits<CR>
 nmap <leader>co :Colors<CR>
