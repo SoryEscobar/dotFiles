@@ -1,14 +1,12 @@
 "Sory's vimrc 2020
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Basics
 syntax on enable
-filetype plugin on
+filetype plugin indent on
 set rnu
-set hls
-set incsearch 
+set hls incsearch 
 
 " Tabs
 set tabstop=4 
@@ -18,46 +16,19 @@ set shiftwidth=4
 set expandtab 
 set autoindent
 "set smartindent
-"set backspace=indent,eol,start 
-set backspace=indent,start
-
-set ignorecase
-set smartcase 
-"set colorcolumn=80
+set backspace=indent,eol,start
 
 set noerrorbells
 set scrolloff=7 " Space lines at border when scrolling.
 
-" Undo
-set undofile
-set nobackup
-set noswapfile
-
-" Encoding
-set fileformat=unix
-set encoding=utf-8
-set fileencoding=utf-8
-
-" Unified clipboard 
-set clipboard=unnamed 
-
-" color scheme
-filetype plugin indent on
-
-" lightline
-set noshowmode
-
-" code folding
-set foldmethod=indent
-set foldlevel=99
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-colorscheme gruvbox
-
-" NERDCommenter
-nmap <C-_> <Plug>NERDCommenterToggle
-nmap <C-_> <Plug>NERDCommenterToggle<CR>gv
+set clipboard=unnamed                                   " Unified clipboard 
+set undofile nobackup noswapfile                        " Undo
+set fileformat=unix encoding=utf-8 fileencoding=utf-8   " Encoding
+set noshowmode                                          " lightline
+set foldmethod=indent foldlevel=99                      " code folding
+set ignorecase smartcase                                " Ignore case searchs
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -76,6 +47,7 @@ Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Plugins: Plug
@@ -83,6 +55,7 @@ source $DOTFILES/.config/nvim/plug-configs/coc.vim
 source $DOTFILES/.config/nvim/plug-configs/fzf.vim
 source $DOTFILES/.config/nvim/plug-configs/auto-pairs.vim
 source $DOTFILES/.config/nvim/plug-configs/vim-airline.vim
+source $DOTFILES/.config/nvim/plug-configs/nerd-commenter.vim
 
 
 " Utilities & Experimental
@@ -90,3 +63,9 @@ source $DOTFILES/.config/nvim/other-configs/leader-mappings.vim
 source $DOTFILES/.config/nvim/other-configs/wrap-mode.vim
 source $DOTFILES/.config/nvim/other-configs/experimental-features.vim
 source $DOTFILES/.config/nvim/other-configs/move-lines.vim
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+colorscheme gruvbox
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
