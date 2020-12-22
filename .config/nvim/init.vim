@@ -50,19 +50,19 @@ call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Utilities & Experimental
+source $DOTFILES/.config/nvim/other-configs/leader-mappings.vim
+source $DOTFILES/.config/nvim/other-configs/wrap-mode.vim
+source $DOTFILES/.config/nvim/other-configs/move-lines.vim
+source $DOTFILES/.config/nvim/other-configs/experimental-features.vim
+
+
 " Plugins: Plug
 source $DOTFILES/.config/nvim/plug-configs/coc.vim
 source $DOTFILES/.config/nvim/plug-configs/fzf.vim
 source $DOTFILES/.config/nvim/plug-configs/auto-pairs.vim
 source $DOTFILES/.config/nvim/plug-configs/vim-airline.vim
 source $DOTFILES/.config/nvim/plug-configs/nerd-commenter.vim
-
-
-" Utilities & Experimental
-source $DOTFILES/.config/nvim/other-configs/leader-mappings.vim
-source $DOTFILES/.config/nvim/other-configs/wrap-mode.vim
-source $DOTFILES/.config/nvim/other-configs/experimental-features.vim
-source $DOTFILES/.config/nvim/other-configs/move-lines.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
