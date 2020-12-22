@@ -19,8 +19,8 @@ else echo "Skiping nvim installation"; fi
 
 
 # Install dependencies
-if [ -z "$(which alacritty)" ]; then echo "Installing alacritty..."; brew install --cask alacritty; else echo "Skiping alacritty installation" ;fi
-if [ -z "$(which fzf)" ]; then echo "Installing fzf..."; brew install fzf; else echo "Skiping fzf installation" ;fi
+if [ -z "$(which alacritty)" ]; then echo "Installing alacritty..."; brew install --cask alacritty; else echo "Skiping alacritty installation" ; fi
+if [ -z "$(which fzf)" ]; then echo "Installing fzf..."; brew install fzf; else echo "Skiping fzf installation" ; fi
 if [ -z "$(which fd)" ]; then echo "Installing fd..."; brew install fd; else echo "Skiping fd installation"; fi
 if [ -z "$(which bat)" ]; then echo "Installing bat..."; brew install bat; else echo "Skiping bat installation"; fi
 if [ -z "$(which ag)" ]; then echo "Installing ag..."; brew install the_silver_searcher;  else echo "Skiping ag installation"; fi
@@ -43,6 +43,6 @@ ln -sf  `pwd`/.config/nvim         ~/.config/nvim
 
 
 # Install Plugins
-nvim -c PlugInstall -c CocInstall coc-sh coc-python -c qa
+nvim -c PlugInstall -c CocInstall coc-sh coc-python coc-explorer -c qa
 
 echo "Sory's dot files succesfully installed!"

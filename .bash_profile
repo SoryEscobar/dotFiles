@@ -37,7 +37,9 @@ alias vim='nvim'
 alias vimrc='vim  ~/.vimrc'
 alias vp='vim  ~/.config/nvim/init.vim'
 
+
 alias dotFiles='cd ~/dotFiles'
+alias df='dotFiles'
 
 # FZF commands
 alias vf='vim "$(rg --files | fzf)"' # Vim file
@@ -54,7 +56,7 @@ alias bup='echo $(brew leaves | fzf -m) | xargs brew uninstall' # Brew Uninstall
 
 
 # FZF Default options
-#export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 
 export FZF_DEFAULT_COMMAND="rg --files"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"

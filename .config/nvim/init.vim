@@ -2,34 +2,42 @@
 
 
 if exists('+termguicolors')
-  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  let &t_8f="\<esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
 
+if (has("termguicolors"))
+    set termguicolors
+endif
 
 
 " Basics
-syntax on
+syntax on enable
+filetype plugin on
 set rnu
 set hls
 set incsearch 
-set termguicolors
+
 
 " Tabs
 set tabstop=4 
 set softtabstop=4
-set expandtab 
-set smartindent
-
-
 set shiftwidth=4
+
+set expandtab 
+set autoindent
+"set smartindent
+"set backspace=indent,eol,start 
+set backspace=indent,start
+
+
 set smartcase 
 "set colorcolumn=80
 
 
 set noerrorbells
-set scrolloff=1 
+set scrolloff=7 " Space lines at border when scrolling.
 
 " Undo
 set undofile
@@ -51,9 +59,18 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'morhetz/gruvbox'
+Plug 'jiangmiao/auto-pairs'
+Plug 'preservim/nerdcommenter'
+
 call plug#end()
+
+
+colorscheme gruvbox
+let g:airline_themes='gruvbox'
 
 
 
@@ -71,6 +88,22 @@ let mapleader = " "
 nmap <leader>[ :bp!<CR>
 nmap <leader>] :bn!<CR>
 nmap <leader>x :bd<CR>
+
+" Display tab buffers at the top:
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#fnamemode=':t'
+
+
+
+" NERDCommenter
+nmap <C-_> <Plug>NERDCommenterToggle
+nmap <C-_> <Plug>NERDCommenterToggle<CR>gv
+
+
+"Explorer
+nmap <leader>e :CocCommand explorer<CR>
+"nmap <leader>e :CocCommand explorer --position floating<CR>
+
 
 " Undo
 nmap <leader>u :e!<CR>
@@ -107,11 +140,11 @@ nmap <leader>c :Commits<CR>
 nmap <leader>co :Colors<CR>
 
 " indent/unindent with tab/shift-tab
-nmap <Tab> >>
-nmap <S-tab> <<
-imap <S-Tab> <Esc><<i
-vmap <Tab> >gv
-vmap <S-Tab> <gv
+"nmap <Tab> >>
+"nmap <S-tab> <<
+"imap <S-Tab> <Esc><<i
+"vmap <Tab> >gv
+"vmap <S-Tab> <gv
 
 "Python
 com! Py ! python3 %
