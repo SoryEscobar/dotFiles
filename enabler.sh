@@ -31,6 +31,8 @@ if [ -z "$(which node)" ]; then echo "Installing node..." ; brew install node; e
 
 
 #Install configs
+pushd ~/dotFiles
+
 rm -rf ~/.vim
 mkdir -p ~/.config; rm -rf ~/.config/nvim
 
@@ -41,6 +43,7 @@ ln -sf  `pwd`/.vimrc               ~/.vimrc
 ln -sf  `pwd`/.vim                 ~/.vim
 ln -sf  `pwd`/.config/nvim         ~/.config/nvim
 
+popd
 
 # Install Plugins
 nvim -c PlugInstall -c CocInstall coc-sh coc-python coc-explorer -c qa

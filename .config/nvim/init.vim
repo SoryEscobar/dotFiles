@@ -8,7 +8,6 @@ filetype plugin indent on
 set rnu
 
 set noerrorbells
-set scrolloff=7 " Space lines at border when scrolling.
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -20,6 +19,7 @@ set undofile nobackup noswapfile                        " Undo
 set fileformat=unix encoding=utf-8 fileencoding=utf-8   " Encoding
 set noshowmode                                          " lightline
 set foldmethod=indent foldlevel=99                      " code folding
+set scrolloff=7 					" Space lines at border when scrolling.
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -36,8 +36,12 @@ Plug 'morhetz/gruvbox'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 
-Plug 'Konfekt/FastFold' " Improved folding engine
-Plug 'tmhedberg/SimpylFold' " Folding algorithm for python
+Plug 'Konfekt/FastFold' 	" Improved folding engine
+Plug 'tmhedberg/SimpylFold' 	" Folding algorithm for python
+Plug 'tpope/vim-surround' 	" Surroundings pairs ej: cs + motion + character to surround
+
+Plug 'vim-syntastic/syntastic'  " Syntaxis highlighting
+Plug 'tpope/vim-fugitive'	" Git tool for vim
 
 call plug#end()
 
