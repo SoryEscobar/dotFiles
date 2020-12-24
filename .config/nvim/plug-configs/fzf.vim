@@ -1,4 +1,3 @@
-
 " Fzf in Vim
 "let g:fzf_layout = { 'down': '30%' } "Bottom Half
 let g:fzf_layout = { 'window': 'enew' } "Full window
@@ -7,7 +6,7 @@ let g:fzf_layout = { 'window': 'enew' } "Full window
 " Mappings
 nmap <leader><Space> :Buffers<CR>
 nmap <leader>f :Files<CR>
-nmap <leader>F :Filetypes<CR>
+"nmap <leader>F :Filetypes<CR>
 "nmap <leader>g :GFiles?<CR>
  
 
@@ -21,4 +20,3 @@ nmap <leader>co :Colors<CR>
 
 " Grep searching
 nmap <leader>g :Rg<CR>
-nmap <leader>G :Ag<CR>

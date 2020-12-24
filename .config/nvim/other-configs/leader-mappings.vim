@@ -20,3 +20,7 @@ nmap <leader>J :wincmd j<CR>
 nmap <leader>K :wincmd k<CR>
 nmap <leader>L :wincmd l<CR>
 nmap <leader><Esc> :wincmd o <CR>
+
+" Zoom a Split'
+nmap <leader>z :tabnew %<CR>
+nmap <leader>q :wq<CR>
