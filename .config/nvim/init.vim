@@ -62,6 +62,8 @@ source $DOTFILES/.config/nvim/plug-configs/fzf.vim
 source $DOTFILES/.config/nvim/plug-configs/auto-pairs.vim
 source $DOTFILES/.config/nvim/plug-configs/vim-airline.vim
 source $DOTFILES/.config/nvim/plug-configs/nerd-commenter.vim
+source $DOTFILES/.config/nvim/plug-configs/vim-fugitive.vim
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
