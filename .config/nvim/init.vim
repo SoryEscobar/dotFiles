@@ -68,5 +68,6 @@ source $DOTFILES/.config/nvim/plug-configs/vim-fugitive.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 colorscheme gruvbox
+set background=dark
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
