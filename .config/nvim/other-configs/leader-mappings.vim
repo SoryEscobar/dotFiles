@@ -23,4 +23,4 @@ nmap <leader><Esc> :wincmd o <CR>
 
 " Zoom a Split'
 nmap <leader>z :tabnew %<CR>
-nmap <leader>q :wq<CR>
+"nmap <leader>q :wq<CR>

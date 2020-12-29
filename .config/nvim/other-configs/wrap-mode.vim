@@ -1,5 +1,5 @@
-
 " wrap toggle
+
 setlocal nowrap
 noremap <silent> <Leader>wr :call ToggleWrap()<CR>
 function ToggleWrap()

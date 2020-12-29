@@ -3,9 +3,11 @@
 
 echo "Welcome Sory. Bash profile file enabled."
 export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u \[\e[33m\]\w\[\e[0m\]\n\$ "
-
-
 export LANG=en_US.UTF8
+
+
+#Add home bin to PATH
+if [[ ":$PATH:" != *":$HOME/bin:"* ]]; then export PATH=~/bin:$PATH; fi
 
 
 bind 'set completion-ignore-case on' #Allows case insensitive tab autocompletion
@@ -67,4 +69,12 @@ alias bipc='echo $(brew search --cask | fzf -m ) | xargs brew install --cask' # 
 alias bcp='echo $(brew leaves | fzf -m) | xargs brew uninstall' # Brew Uninstall Package FZF
 
 
+# cht.sh --> Cheat Sheet 
+alias cs='cht.sh --shell'
+alias csp='cht.sh --shell python'
+alias csb='cht.sh --shell bash'
+alias csg='cht.sh --shell git'
+
+
+# Attach an existing tmux session
 [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}

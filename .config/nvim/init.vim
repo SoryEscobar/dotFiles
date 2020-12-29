@@ -42,6 +42,7 @@ Plug 'tpope/vim-surround' 	" Surroundings pairs ej: cs + motion + character to s
 
 Plug 'vim-syntastic/syntastic'  " Syntaxis highlighting
 Plug 'tpope/vim-fugitive'	" Git tool for vim
+Plug 'dbeniamine/cheat.sh-vim'	" Cheat sheet tool for vim.
 
 call plug#end()
 
@@ -63,6 +64,7 @@ source $DOTFILES/.config/nvim/plug-configs/auto-pairs.vim
 source $DOTFILES/.config/nvim/plug-configs/vim-airline.vim
 source $DOTFILES/.config/nvim/plug-configs/nerd-commenter.vim
 source $DOTFILES/.config/nvim/plug-configs/vim-fugitive.vim
+source $DOTFILES/.config/nvim/plug-configs/cheat.sh.vim
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
