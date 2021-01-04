@@ -6,25 +6,33 @@
 
 #Install brew
 if [ -z "$(which brew)" ]; then echo "Installing brew...";
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 else echo "Skipping brew installation"; fi
 
 
-#TODO: Add brew bin to path variable for Linux installation.
+# Add brew bin to path variable for Linux installation.
+if [ "$(uname)" == "Linux" ]; then
+	echo "Linux OS detected"
+	if [[ ":$PATH:" != *"linuxbrew"* ]]; then 
+		echo "Adding brew to PATH environmental variable..."
+		export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+	else echo "brew bin is already on PATH"
+	fi
+else echo "MacOS detected"; fi
 
 
 #Install nvim
 if [ -z "$(which nvim)" ]; then echo "Installing nvim..."; 
-    sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-else echo "Skipping nvim installation"; fi
+	sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+	else echo "Skipping nvim installation"; fi
 
 
 # Install Plug
 if [ -f $HOME/.local/share/nvim/site/autoload/plug.vim ]; then echo "Skipping Plug installation";
 else echo "Ïnstalling Plug...";
 	sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'; fi
+		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'; fi
 
 
 
