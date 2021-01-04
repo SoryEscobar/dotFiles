@@ -9,6 +9,11 @@ export LANG=en_US.UTF8
 #Add home bin to PATH
 if [[ ":$PATH:" != *":$HOME/bin:"* ]]; then export PATH=~/bin:$PATH; fi
 
+#Add brew bin to PATH
+if [ "$(uname)" == "Linux" ]; then
+	if [[ ":$PATH:" != *"linuxbrew"* ]]; then export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH; fi
+fi
+
 
 bind 'set completion-ignore-case on' #Allows case insensitive tab autocompletion
 
@@ -77,4 +82,4 @@ alias csg='cht.sh --shell git'
 
 
 # Attach an existing tmux session
-[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
+if [ "$(uname)" != "Linux" ]; then [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}; fi
