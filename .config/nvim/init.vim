@@ -1,27 +1,5 @@
 "Sory's vimrc 2020
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Basics
-syntax on enable
-filetype plugin indent on
-set rnu
-
-set noerrorbells
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-set hls incsearch                                       " search settings
-set ignorecase smartcase                                " Ignore case searchs
-set backspace=indent,eol,start                          " backspace behavior
-set clipboard=unnamed                                   " Unified clipboard 
-set undofile nobackup noswapfile                        " Undo
-set fileformat=unix encoding=utf-8 fileencoding=utf-8   " Encoding
-set noshowmode                                          " lightline
-set foldmethod=indent foldlevel=99                      " code folding
-set scrolloff=7 					" Space lines at border when scrolling.
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Plugins
 call plug#begin('~/.vim/plugged')
@@ -51,6 +29,7 @@ call plug#end()
 
 " Utilities & Experimental
 source $DOTFILES/.config/nvim/other-configs/leader-mappings.vim
+source $DOTFILES/.config/nvim/other-configs/sets.vim
 source $DOTFILES/.config/nvim/other-configs/wrap-mode.vim
 source $DOTFILES/.config/nvim/other-configs/move-lines.vim
 source $DOTFILES/.config/nvim/other-configs/experimental-features.vim
