@@ -1,7 +1,14 @@
 " Fzf in Vim
 "let g:fzf_layout = { 'down': '30%' } "Bottom Half
 "let g:fzf_layout = { 'window': 'enew' } "Full window
-let g:fzf_layout = { 'window': {'width': 0.8, 'height': 0.8 }}
+let g:fzf_layout = { 'window': {'width': 0.9, 'height': 0.9 }}
+
+
+" Preview window on the right side of the window,
+" hidden by default, ctrl-/ to toggle
+"let g:fzf_preview_window = ['right:hidden', 'ctrl-/']
+"let g:fzf_preview_window = ['down:40%:hidden', 'ctrl-/']
+let g:fzf_preview_window = ['down:40%', 'ctrl-/']
 
 
 let $FZF_DEFAULT_OPTS = '--reverse'
@@ -23,4 +30,4 @@ nmap <leader>c :Commits<CR>
 nmap <leader>co :Colors<CR>
 
 " Grep searching
-nmap <leader>g :Rg<CR>
+nmap <leader>rg :Rg<CR>

@@ -1,5 +1,6 @@
 " Leader
 let mapleader = " "
+"set timeoutlen=100
 
 " move through buffers
 nmap <leader>[ :bp!<CR>
@@ -24,3 +25,9 @@ nmap <leader><Esc> :wincmd o <CR>
 " Zoom a Split'
 nmap <leader>z :tabnew %<CR>
 "nmap <leader>q :wq<CR>
+"
+
+
+" Terminal Remaps 
+nmap <leader>t :terminal<CR>
+"tnoremap <Esc> <C-\><C-n>

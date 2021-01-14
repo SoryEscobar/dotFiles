@@ -1,4 +1,5 @@
-let g:airline_theme='molokai'
+"let g:airline_theme='molokai'
+let g:airline_theme='one'
 
 
 " Display tab buffers at the top:

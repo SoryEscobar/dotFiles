@@ -10,7 +10,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'		" Colour theme
+Plug 'rakr/vim-one'		" Colour theme
+
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 
@@ -30,10 +32,12 @@ call plug#end()
 " Utilities & Experimental
 source $DOTFILES/.config/nvim/other-configs/leader-mappings.vim
 source $DOTFILES/.config/nvim/other-configs/sets.vim
-source $DOTFILES/.config/nvim/other-configs/wrap-mode.vim
+source $DOTFILES/.config/nvim/other-configs/colours.vim
 source $DOTFILES/.config/nvim/other-configs/move-lines.vim
 source $DOTFILES/.config/nvim/other-configs/experimental-features.vim
 source $DOTFILES/.config/nvim/other-configs/python-configs.vim
+"source $DOTFILES/.config/nvim/other-configs/wrap-mode.vim
+
 
 
 " Plugins: Plug
@@ -43,12 +47,3 @@ source $DOTFILES/.config/nvim/plug-configs/auto-pairs.vim
 source $DOTFILES/.config/nvim/plug-configs/vim-airline.vim
 source $DOTFILES/.config/nvim/plug-configs/nerd-commenter.vim
 source $DOTFILES/.config/nvim/plug-configs/vim-fugitive.vim
-source $DOTFILES/.config/nvim/plug-configs/cheat.sh.vim
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-colorscheme gruvbox
-set background=dark
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

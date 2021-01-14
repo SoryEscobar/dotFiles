@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/sory/dotFiles/.config/nvim'
 let g:netrw_dirhist_5='/Users/sory/dotFiles/.config/nvim/plug-configs'
 let g:netrw_dirhist_4='/Users/sory/dotFiles'
 let g:netrw_dirhist_3='/Users/sory'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_0='/Users/sory/coding_projects_2020/torretest_api'
 let g:netrw_dirhist_9='/Users/sory/programing_projects_2020/torretest_front/user'
 let g:netrw_dirhist_8='/Users/sory/programing_projects_2020/torretest_api/api'
 let g:netrw_dirhist_7='/Users/sory/programing_projects_2020/torretest_api'
-let g:netrw_dirhist_6='/Users/sory/Documents/Desarrollo y Programacion/Proyectos_de_programacion_de_PortatilMacbookSory/finanzas_app'
