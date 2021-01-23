@@ -4,30 +4,67 @@
 " Plugins
 call plug#begin('~/.vim/plugged')
 
+
+""" Fuzzy finder plugin
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+
+
+""" Code completion plugin
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'morhetz/gruvbox'		" Colour theme
-Plug 'rakr/vim-one'		" Colour theme
 
+""" Color themes
+"Plug 'morhetz/gruvbox'		
+Plug 'rakr/vim-one'	
+
+
+""" Vim status barline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+
+""" Matching pairs for container characters
 Plug 'jiangmiao/auto-pairs'
-Plug 'preservim/nerdcommenter'
-
-Plug 'Konfekt/FastFold' 	" Improved folding engine
-Plug 'tmhedberg/SimpylFold' 	" Folding algorithm for python
 Plug 'tpope/vim-surround' 	" Surroundings pairs ej: cs + motion + character to surround
 
-Plug 'vim-syntastic/syntastic'  " Syntaxis highlighting
+
+""" Commenter plugin
+Plug 'preservim/nerdcommenter'
+
+
+""" Folding plugin
+Plug 'Konfekt/FastFold' 	" Improved folding engine
+Plug 'tmhedberg/SimpylFold' 	" Folding algorithm for python
+
+
+""" Syntaxis Highliting
+Plug 'vim-syntastic/syntastic'  " Under testing, coc has this feature already.
+
+
+""" Git plugin
 Plug 'tpope/vim-fugitive'	" Git tool for vim
+Plug 'airblade/vim-gitgutter'	" Shows git line changes at the left column
+
+
+""" Wiki inside vim plugin
 Plug 'dbeniamine/cheat.sh-vim'	" Cheat sheet tool for vim.
+
+
+""" Motion Plugin
+Plug 'easymotion/vim-easymotion'     " go to any word quickly '\\w', '\\e', '\\b'
+
+
+""" Home page plugin
+Plug 'mhinz/vim-startify'            " A start menu for vim
+
 
 call plug#end()
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 " Utilities & Experimental
 source $DOTFILES/.config/nvim/other-configs/leader-mappings.vim
@@ -47,3 +84,5 @@ source $DOTFILES/.config/nvim/plug-configs/auto-pairs.vim
 source $DOTFILES/.config/nvim/plug-configs/vim-airline.vim
 source $DOTFILES/.config/nvim/plug-configs/nerd-commenter.vim
 source $DOTFILES/.config/nvim/plug-configs/vim-fugitive.vim
+source $DOTFILES/.config/nvim/plug-configs/git-gutter.vim
+source $DOTFILES/.config/nvim/plug-configs/easymotion.vim

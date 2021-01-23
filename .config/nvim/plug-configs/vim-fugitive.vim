@@ -1,7 +1,8 @@
 
 nmap <leader>gs :G<CR> " Git status
-nmap <leader>gc :Gcommit<CR> " Git commit
-nmap <leader>gp :Gpush<CR> " Git push
+nmap <leader>gco :Gcommit<CR> " Git commit
+nmap <leader>gps :Gpush<CR> " Git push
+nmap <leader>gpl :Gpull<CR> " Git pull
 
 nmap <leader>gh :diffget //3<CR> " Diff get left side
 nmap <leader>gl :diffget //2<CR> " Diff get right side

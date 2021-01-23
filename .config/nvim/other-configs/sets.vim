@@ -8,6 +8,8 @@ set rnu									" Relative numbers
 set nu									" Line number at the line of the cursor.
 set exrc								" Sources vimrc in the current project dir. 
 set guicursor=								" Forces square curor on insert mode
+set cursorline								" Enables a line where the cursor is located
+set cursorcolumn							" Enables a column where the cursor is located
 set incsearch                                           		" search settings
 set nohls								" Disable the reminder highlighted search after searchs.
 set ignorecase smartcase                                		" Ignore case searchs
