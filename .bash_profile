@@ -4,6 +4,8 @@
 echo "Welcome Sory. Bash profile file enabled."
 export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u \[\e[33m\]\w\[\e[0m\]\n\$ "
 export LANG=en_US.UTF8
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 
 #Add home bin to PATH
