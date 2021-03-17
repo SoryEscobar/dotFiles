@@ -86,3 +86,11 @@ source $DOTFILES/.config/nvim/plug-configs/nerd-commenter.vim
 source $DOTFILES/.config/nvim/plug-configs/vim-fugitive.vim
 source $DOTFILES/.config/nvim/plug-configs/git-gutter.vim
 source $DOTFILES/.config/nvim/plug-configs/easymotion.vim
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Things to do:
+
+" TODO: Fix the binding for the easymotion default <leader><leader> behavior.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
