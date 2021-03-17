@@ -28,7 +28,8 @@ set nowrap                                                              " Avoids
 set signcolumn=yes                                                      " Puts a column on the left for the use of linting/git plugins
 
 " Tabs:
-set autoindent smartindent                                              " Copy indent from current line when starting a new line (smart indenting). 
 set expandtab                                                           " Replaces tabs with spaces
-set softtabstop=4                                                       " Number of spaces that the expandtab will use to replace a tab.
-set shiftwidth=4                                                        " CONFIRM DESCRIPTION.
+"set softtabstop=4                                                       " Number of spaces that the expandtab will use to replace a tab.
+set tabstop=4                                                           " Number of spaces that the expandtab will use to replace a tab.
+set shiftwidth=4                                                        " Number of space characters inserted for indentation
+set autoindent smartindent                                              " Copy indent from current line when starting a new line (smart indenting). 
