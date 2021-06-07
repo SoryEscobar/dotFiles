@@ -82,6 +82,9 @@ alias csp='cht.sh --shell python'
 alias csb='cht.sh --shell bash'
 alias csg='cht.sh --shell git'
 
+# Bash Autocompletion
+complete -C aws_completer aws #AWS CLI
+
 
 # Attach an existing tmux session
 if [ "$(uname)" != "Linux" ]; then [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}; fi
