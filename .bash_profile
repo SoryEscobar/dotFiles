@@ -86,5 +86,12 @@ alias csg='cht.sh --shell git'
 complete -C aws_completer aws #AWS CLI
 
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    # bash-completion should be installed first (use HomeBrew)
+    # bash-completion enables Docker autocompletion
+    . $(brew --prefix)/etc/bash_completion
+fi
+
+
 # Attach an existing tmux session
 if [ "$(uname)" != "Linux" ]; then [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}; fi
