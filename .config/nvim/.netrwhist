@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/sory/Documents/torre/torretest_api/api'
+let g:netrw_dirhist_8='/Users/sory/Documents/torre/torretest_api/api/api/job'
 let g:netrw_dirhist_7='/Users/sory/dotFiles'
 let g:netrw_dirhist_6='/Users/sory/dotFiles/.config/nvim'
 let g:netrw_dirhist_5='/Users/sory/dotFiles/.config/nvim/plug-configs'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_3='/Users/sory'
 let g:netrw_dirhist_2='/Users/sory/dotFiles'
 let g:netrw_dirhist_1='/Users/sory'
 let g:netrw_dirhist_0='/Users/sory/coding_projects_2020/torretest_api'
-let g:netrw_dirhist_9='/Users/sory/programing_projects_2020/torretest_front/user'
-let g:netrw_dirhist_8='/Users/sory/programing_projects_2020/torretest_api/api'

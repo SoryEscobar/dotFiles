@@ -92,6 +92,11 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
+#Bash autocompletion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 
 # Attach an existing tmux session
 if [ "$(uname)" != "Linux" ]; then [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}; fi
