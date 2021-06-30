@@ -15,8 +15,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 """ Color themes
-"Plug 'morhetz/gruvbox'		
+Plug 'morhetz/gruvbox'		
 Plug 'rakr/vim-one'	
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 
 """ Vim status barline
@@ -71,7 +72,7 @@ source $DOTFILES/.config/nvim/other-configs/leader-mappings.vim
 source $DOTFILES/.config/nvim/other-configs/sets.vim
 source $DOTFILES/.config/nvim/other-configs/colours.vim
 source $DOTFILES/.config/nvim/other-configs/move-lines.vim
-source $DOTFILES/.config/nvim/other-configs/experimental-features.vim
+"source $DOTFILES/.config/nvim/other-configs/experimental-features.vim
 source $DOTFILES/.config/nvim/other-configs/python-configs.vim
 "source $DOTFILES/.config/nvim/other-configs/wrap-mode.vim
 

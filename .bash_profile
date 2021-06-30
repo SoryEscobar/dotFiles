@@ -45,7 +45,11 @@ alias tl='tt ls'
 alias tn='tt new -s'
 alias tp='v ~/.tmux.conf'
 alias tt='tmux'
-alias tmux='TERM=screen-256color tmux'
+#alias tmux='TERM=screen-256color tmux'
+#alias tmux='TERM=xterm-256color tmux'
+#alias tmux="TERM=screen-256color-bce tmux"
+#alias tmux="tmux -2"
+#alias tmux='TERM=screen-256color tmux -2'
 
 
 # dotFiles

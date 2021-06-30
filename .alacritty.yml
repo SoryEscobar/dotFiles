@@ -1,15 +1,15 @@
 # Window Customization
 window:
   startup_mode: Fullscreen
-  padding:
-    x: 4
-    y: 4
+  #padding:
+    #x: 4
+    #y: 4
   decorations: full
   dynamic_title: true
 
 env:
   TERM: xterm-256color
-    #TERM: alacritty
+  #TERM: alacritty
 
 # Scrolling
 scrolling.muultiplier: 3
@@ -30,7 +30,7 @@ font:
   italic:
     family: Menlo
     style: Italic
-  size: 14
+  size: 11
   use_thin_strokes: false
   debug:
     persistent_logging: false

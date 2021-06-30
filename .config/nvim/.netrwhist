@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/Users/sory/Documents/coding_projects_2020/FiNotion/flask_app'
 let g:netrw_dirhist_9='/Users/sory/Documents/torre/torretest_api/api'
 let g:netrw_dirhist_8='/Users/sory/Documents/torre/torretest_api/api/api/job'
 let g:netrw_dirhist_7='/Users/sory/dotFiles'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_4='/Users/sory/dotFiles'
 let g:netrw_dirhist_3='/Users/sory'
 let g:netrw_dirhist_2='/Users/sory/dotFiles'
 let g:netrw_dirhist_1='/Users/sory'
-let g:netrw_dirhist_0='/Users/sory/coding_projects_2020/torretest_api'

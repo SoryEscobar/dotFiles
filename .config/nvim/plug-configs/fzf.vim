@@ -19,7 +19,7 @@ let $FZF_DEFAULT_OPTS = '--reverse'
 "nmap <leader>b :Buffers<CR>
 nmap <leader>b :Buffers<CR>
 nmap <leader>f :Files<CR>
-"nmap <leader>F :Filetypes<CR>
+nmap <leader>F :Filetypes<CR>
 "nmap <leader>g :GFiles?<CR>
  
 
