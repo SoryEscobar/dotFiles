@@ -1,6 +1,7 @@
 # Window Customization
 window:
-  startup_mode: Fullscreen
+  #startup_mode: Fullscreen
+  startup_mode: Maximized
   #padding:
     #x: 4
     #y: 4
@@ -17,7 +18,7 @@ scrolling:
   history: 10000
   multiplier: 3
   autoscroll: true
-background_opacity: .75
+#background_opacity: .75
 
 # Font Customization
 font:
